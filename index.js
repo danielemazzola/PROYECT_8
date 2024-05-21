@@ -12,8 +12,8 @@ app.use(express.urlencoded({ extended: false }))
 CONNECTDB()
 CONNECTION_CLOUDINARY()
 
-const characterRoutes = require('./routes/characterRoutes')
-app.use('/api/characters', characterRoutes)
+const heroRoutes = require('./routes/heroRoutes')
+app.use('/api/hero', heroRoutes)
 
 app.get('*', (req, res, next) => {
   const ERROR = 'URL NOT FOUND'
