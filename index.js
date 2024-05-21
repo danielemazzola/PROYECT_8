@@ -15,6 +15,9 @@ CONNECTION_CLOUDINARY()
 const heroRoutes = require('./routes/heroRoutes')
 app.use('/api/hero', heroRoutes)
 
+const powerRoutes = require('./routes/powerRoutes')
+app.use('/api/power', powerRoutes)
+
 app.get('*', (req, res, next) => {
   const ERROR = 'URL NOT FOUND'
   next(ERROR)

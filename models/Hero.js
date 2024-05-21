@@ -9,7 +9,13 @@ const HeroSchema = mongoose.Schema({
   img: {
     type: String,
     required: true
-  }
+  },
+  powers: [
+    {
+      type: mongoose.Types.ObjectId,
+      ref: 'Powers'
+    }
+  ]
 })
 
 const Hero = mongoose.model('Hero', HeroSchema)
