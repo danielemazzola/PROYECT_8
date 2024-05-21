@@ -18,6 +18,9 @@ app.use('/api/hero', heroRoutes)
 const powerRoutes = require('./routes/powerRoutes')
 app.use('/api/power', powerRoutes)
 
+const fusionRoutes = require('./routes/fusionRoutes')
+app.use('/api/fusion', fusionRoutes)
+
 app.get('*', (req, res, next) => {
   const ERROR = 'URL NOT FOUND'
   next(ERROR)

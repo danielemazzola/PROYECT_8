@@ -12,7 +12,7 @@ const {
 
 const getAllHero = async (req, res) => {
   try {
-    const hero = await Hero.find()
+    const hero = await Hero.find().populate({ path: 'powers', select: 'name' })
     return res.status(201).json({ message: ALL_HEROES, hero })
   } catch (error) {
     console.log(error)

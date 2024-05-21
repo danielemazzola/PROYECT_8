@@ -12,8 +12,8 @@ const HeroSchema = mongoose.Schema({
   },
   powers: [
     {
-      type: mongoose.Types.ObjectId,
-      ref: 'Powers'
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Power'
     }
   ]
 })
