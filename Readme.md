@@ -1,4 +1,4 @@
-Claro, aquí tienes el archivo `README.md` completamente en Markdown con el formato adecuado para que se vea bien en GitHub:
+Claro, aquí tienes el archivo `README.md` completamente en Markdown con los detalles adicionales para las rutas:
 
 ````markdown
 # Project 8 Rock the Code
@@ -52,28 +52,51 @@ Claro, aquí tienes el archivo `README.md` completamente en Markdown con el form
 
 - **Base URL**: `/api/hero`
 
-| Method     | Endpoint       | Description                              |
-| ---------- | -------------- | ---------------------------------------- |
-| **GET**    | `/`            | Get all heroes                           |
-| **POST**   | `/create`      | Add a new hero (requires image)          |
-| **PUT**    | `/update/:_id` | Update an existing hero (requires image) |
-| **DELETE** | `/delete/:_id` | Delete a hero                            |
+| Method     | Endpoint       | Description                                                                               |
+| ---------- | -------------- | ----------------------------------------------------------------------------------------- |
+| **GET**    | `/`            | Get all heroes                                                                            |
+| **POST**   | `/create`      | Add a new hero (requires `name` and `img` in `jpg`, `png`, `jpeg`, `gif`, `webp` formats) |
+| **PUT**    | `/update/:_id` | Update an existing hero (requires `name` or `img`, and `:_id` as a parameter)             |
+| **DELETE** | `/delete/:_id` | Delete a hero (requires `:_id` as a parameter)                                            |
 
 **To create a hero, the following fields are required:**
 
 - `name`: "Hero Name"
-- `img`: _Image file_
+- `img`: _Image file in formats ['jpg', 'png', 'jpeg', 'gif', 'webp']_
+
+**To update a hero, you can pass either or both fields:**
+
+- `name`: "Updated Hero Name"
+- `img`: _Updated image file_
+- `:_id`: Hero ID (as a URL parameter)
+
+**To delete a hero, pass the following parameter:**
+
+- `:_id`: Hero ID (as a URL parameter)
 
 ### POWER
 
 - **Base URL**: `/api/power`
 
-| Method     | Endpoint       | Description              |
-| ---------- | -------------- | ------------------------ |
-| **GET**    | `/`            | Get all powers           |
-| **POST**   | `/create`      | Add a new power          |
-| **PUT**    | `/update/:_id` | Update an existing power |
-| **DELETE** | `/delete/:_id` | Delete a power           |
+| Method     | Endpoint       | Description                                                                      |
+| ---------- | -------------- | -------------------------------------------------------------------------------- |
+| **GET**    | `/`            | Get all powers                                                                   |
+| **POST**   | `/create`      | Add a new power (requires `name`)                                                |
+| **PUT**    | `/update/:_id` | Update an existing power (requires `:_id` as a parameter and `name` in the body) |
+| **DELETE** | `/delete/:_id` | Delete a power (requires `:_id` as a parameter)                                  |
+
+**To create a power, the following field is required:**
+
+- `name`: "Power Name"
+
+**To update a power, the following fields are required:**
+
+- `:_id`: Power ID (as a URL parameter)
+- `name`: "Updated Power Name" (in the body)
+
+**To delete a power, the following parameter is required:**
+
+- `:_id`: Power ID (as a URL parameter)
 
 ### FUSION
 
@@ -82,6 +105,15 @@ Claro, aquí tienes el archivo `README.md` completamente en Markdown con el form
 | Method   | Endpoint | Description            |
 | -------- | -------- | ---------------------- |
 | **POST** | `/`      | Link a power to a hero |
+
+**To link a power to a hero, the following fields are required:**
+
+```json
+{
+  "hero": "Goku",
+  "power": "Spirit Bomb"
+}
+```
 
 ## Author
 
@@ -93,5 +125,4 @@ Project by **Daniele Mazzola**
 
 ```
 
-Este formato asegura que el archivo se vea bien organizado y claro en GitHub, utilizando Markdown para la estructura y el estilo del contenido.
 ```
