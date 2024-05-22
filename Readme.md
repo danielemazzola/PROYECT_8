@@ -1,6 +1,3 @@
-Claro, aquí tienes el archivo `README.md` completamente en Markdown con los detalles adicionales para las rutas:
-
-````markdown
 # Project 8 Rock the Code
 
 ## Technologies Used
@@ -22,6 +19,7 @@ Claro, aquí tienes el archivo `README.md` completamente en Markdown con los det
   "multer-storage-cloudinary": "^4.0.0"
 }
 ```
+
 ````
 
 ### Development Dependencies
@@ -126,3 +124,4 @@ Project by **Daniele Mazzola**
 ```
 
 ```
+````
