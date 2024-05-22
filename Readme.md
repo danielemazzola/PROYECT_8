@@ -8,37 +8,29 @@
 
 ## 📦 Dependencies
 
-```json
 "dependencies": {
-  "cloudinary": "^1.41.3",
-  "dotenv": "^16.4.5",
-  "express": "^4.19.2",
-  "mongodb": "^6.6.2",
-  "mongoose": "^8.4.0",
-  "multer": "^1.4.5-lts.1",
-  "multer-storage-cloudinary": "^4.0.0"
+"cloudinary": "^1.41.3",
+"dotenv": "^16.4.5",
+"express": "^4.19.2",
+"mongodb": "^6.6.2",
+"mongoose": "^8.4.0",
+"multer": "^1.4.5-lts.1",
+"multer-storage-cloudinary": "^4.0.0"
 }
-```
-
-````
 
 ### 🧰 Development Dependencies
 
-```json
 "devDependencies": {
-  "nodemon": "^3.1.0"
+"nodemon": "^3.1.0"
 }
-```
 
 ## 📜 Scripts
 
-```json
 "scripts": {
-  "start": "node index.js",
-  "dev": "nodemon index.js",
-  "seed": "node seed/seed.js"
+"start": "node index.js",
+"dev": "nodemon index.js",
+"seed": "node seed/seed.js"
 }
-```
 
 - **start**: Runs the application.
 - **dev**: Runs the application with nodemon for development.
@@ -106,12 +98,10 @@
 
 **To link a power to a hero, the following fields are required:**
 
-```json
 {
-  "hero": "Goku",
-  "power": "Spirit Bomb"
+"hero": "Goku",
+"power": "Spirit Bomb"
 }
-```
 
 ## 👤 Author
 
@@ -120,5 +110,3 @@ Project by **Daniele Mazzola**
 ## 🔗 Repository URL
 
 [GitHub - PROYECT_8](https://github.com/danielemazzola/PROYECT_8)
-
-````
