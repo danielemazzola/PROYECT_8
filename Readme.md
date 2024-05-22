@@ -1,12 +1,13 @@
-# Project 8 Rock the Code
+````markdown
+# 🚀 Project 8 Rock the Code
 
-## Technologies Used
+## 🛠️ Technologies Used
 
 - **Node.js**
 - **Express.js**
 - **MongoDB**
 
-## Dependencies
+## 📦 Dependencies
 
 ```json
 "dependencies": {
@@ -19,10 +20,9 @@
   "multer-storage-cloudinary": "^4.0.0"
 }
 ```
-
 ````
 
-### Development Dependencies
+### 🧰 Development Dependencies
 
 ```json
 "devDependencies": {
@@ -30,7 +30,7 @@
 }
 ```
 
-## Scripts
+## 📜 Scripts
 
 ```json
 "scripts": {
@@ -44,9 +44,9 @@
 - **dev**: Runs the application with nodemon for development.
 - **seed**: Adds 5 powers to the database.
 
-## Routes
+## 🌐 Routes
 
-### HERO
+### 🦸 HERO
 
 - **Base URL**: `/api/hero`
 
@@ -72,7 +72,7 @@
 
 - `:_id`: Hero ID (as a URL parameter)
 
-### POWER
+### ⚡ POWER
 
 - **Base URL**: `/api/power`
 
@@ -96,7 +96,7 @@
 
 - `:_id`: Power ID (as a URL parameter)
 
-### FUSION
+### 🔗 FUSION
 
 - **Base URL**: `/api/fusion`
 
@@ -113,15 +113,14 @@
 }
 ```
 
-## Author
+## 👤 Author
 
 Project by **Daniele Mazzola**
 
-## Repository URL
+## 🔗 Repository URL
 
 [GitHub - PROYECT_8](https://github.com/danielemazzola/PROYECT_8)
 
 ```
 
 ```
-````
