@@ -1,4 +1,3 @@
-````markdown
 # 🚀 Project 8 Rock the Code
 
 ## 🛠️ Technologies Used
@@ -20,6 +19,7 @@
   "multer-storage-cloudinary": "^4.0.0"
 }
 ```
+
 ````
 
 ### 🧰 Development Dependencies
@@ -121,6 +121,4 @@ Project by **Daniele Mazzola**
 
 [GitHub - PROYECT_8](https://github.com/danielemazzola/PROYECT_8)
 
-```
-
-```
+````
