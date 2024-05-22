@@ -8,6 +8,7 @@
 
 ## 📦 Dependencies
 
+```
 "dependencies": {
 "cloudinary": "^1.41.3",
 "dotenv": "^16.4.5",
@@ -17,20 +18,25 @@
 "multer": "^1.4.5-lts.1",
 "multer-storage-cloudinary": "^4.0.0"
 }
+```
 
 ### 🧰 Development Dependencies
 
+```
 "devDependencies": {
 "nodemon": "^3.1.0"
 }
+```
 
 ## 📜 Scripts
 
+```
 "scripts": {
 "start": "node index.js",
 "dev": "nodemon index.js",
 "seed": "node seed/seed.js"
 }
+```
 
 - **start**: Runs the application.
 - **dev**: Runs the application with nodemon for development.
@@ -98,10 +104,12 @@
 
 **To link a power to a hero, the following fields are required:**
 
+```
 {
-"hero": "Goku",
-"power": "Spirit Bomb"
+  "hero": "Goku",
+  "power": "Spirit Bomb"
 }
+```
 
 ## 👤 Author
 
