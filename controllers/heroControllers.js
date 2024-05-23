@@ -8,7 +8,7 @@ const {
   UPDATE_HERO,
   DELETE,
   ERROR
-} = require('./helpers/messages_texts')
+} = require('../helpers/messages_texts')
 
 const getAllHero = async (req, res) => {
   try {

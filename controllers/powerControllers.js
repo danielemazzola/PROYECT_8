@@ -7,7 +7,7 @@ const {
   POWER_NOT_FOUND,
   UPDATE_POWER,
   DELETE_POWER
-} = require('./helpers/messages_texts')
+} = require('../helpers/messages_texts')
 
 const getAllPower = async (req, res) => {
   try {
