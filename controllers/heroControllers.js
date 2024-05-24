@@ -64,7 +64,6 @@ const updateHero = async (req, res) => {
           new: true
         }
       )
-      await newHero.save()
       return res.status(201).json({ message: UPDATE_HERO, newHero })
     }
   } catch (error) {

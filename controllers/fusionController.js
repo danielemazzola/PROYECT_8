@@ -3,18 +3,18 @@ const Power = require('../models/Power')
 const fusionController = async (req, res) => {
   const { hero, power } = req.body
 
-  const existHero = await Hero.find().where('name').equals(hero)
-  const existPower = await Power.find().where('name').equals(power)
+  const existHero = await Hero.findOne({ name: hero })
+  const existPower = await Power.findOne({ name: power })
   if (!existHero) return res.status(409).json('Hero no existe')
   if (!existPower) return res.status(409).json('Power no existe')
-  const duplicatePower = existHero[0].powers.filter(
-    (val) => val.toString() === existPower[0]._id.toString()
+  const duplicatePower = existHero.powers.some(
+    (val) => val.toString() === existPower._id.toString()
   )
-  if (duplicatePower.length) return res.status(201).json('PODER DUPLICADO')
+  if (duplicatePower) return res.status(201).json('PODER DUPLICADO')
   const fusion = await Hero.findByIdAndUpdate(
-    existHero[0]._id,
+    existHero._id,
     {
-      powers: [...existHero[0].powers, existPower[0]._id]
+      powers: [...existHero.powers, existPower._id]
     },
     { new: true }
   )

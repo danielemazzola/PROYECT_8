@@ -4,19 +4,24 @@ const mongoose = require('mongoose')
 
 const powers = [
   {
-    name: 'Kamehameha'
+    name: 'Kamehameha',
+    img: 'https://static.wikia.nocookie.net/dragonballfanon/images/e/e0/Choque_de_poderes_de_bardock_y_chilled.png/revision/latest?cb=20151028042147&path-prefix=es'
   },
   {
-    name: 'Final Flash'
+    name: 'Final Flash',
+    img: 'https://static.wikia.nocookie.net/dragonballfanon/images/e/e0/Choque_de_poderes_de_bardock_y_chilled.png/revision/latest?cb=20151028042147&path-prefix=es'
   },
   {
-    name: 'Special Beam Cannon'
+    name: 'Special Beam Cannon',
+    img: 'https://static.wikia.nocookie.net/dragonballfanon/images/e/e0/Choque_de_poderes_de_bardock_y_chilled.png/revision/latest?cb=20151028042147&path-prefix=es'
   },
   {
-    name: 'Spirit Bomb'
+    name: 'Spirit Bomb',
+    img: 'https://static.wikia.nocookie.net/dragonballfanon/images/e/e0/Choque_de_poderes_de_bardock_y_chilled.png/revision/latest?cb=20151028042147&path-prefix=es'
   },
   {
-    name: 'Galick Gun'
+    name: 'Galick Gun',
+    img: 'https://static.wikia.nocookie.net/dragonballfanon/images/e/e0/Choque_de_poderes_de_bardock_y_chilled.png/revision/latest?cb=20151028042147&path-prefix=es'
   }
 ]
 
