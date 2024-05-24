@@ -1,6 +1,6 @@
 const express = require('express')
 const ROUTER = express.Router()
-const { upload } = require('../middleware/uploadImage')
+const { uploadPower } = require('../middleware/uploadImage')
 const {
   getAllPower,
   addPower,
@@ -9,8 +9,8 @@ const {
 } = require('../controllers/powerControllers')
 
 ROUTER.get('/', getAllPower)
-ROUTER.post('/create', upload.single('img'), addPower)
-ROUTER.put('/update/:_id', upload.single('img'), updatePower)
+ROUTER.post('/create', uploadPower.single('img'), addPower)
+ROUTER.put('/update/:_id', uploadPower.single('img'), updatePower)
 ROUTER.delete('/delete/:_id', deletePower)
 
 module.exports = ROUTER

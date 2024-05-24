@@ -56,6 +56,7 @@ const updatePower = async (req, res) => {
       })
       return res.status(200).json({ message: UPDATE_POWER, updatePower })
     } else {
+      deleteImg(existPower.img)
       const updatePower = await Power.findByIdAndUpdate(
         _id,
         {
