@@ -8,7 +8,7 @@ const HeroSchema = mongoose.Schema({
   },
   img: {
     type: String,
-    required: true
+    require: true
   },
   powers: [
     {
