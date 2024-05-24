@@ -8,7 +8,7 @@ const {
   UPDATE_POWER,
   DELETE_POWER
 } = require('../helpers/messages_texts')
-const { deleteImg } = require('../middleware/uploadImage')
+const { deleteImg } = require('../middleware/deleteImage')
 
 const getAllPower = async (req, res) => {
   try {

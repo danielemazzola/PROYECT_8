@@ -1,5 +1,5 @@
 const Hero = require('../models/Hero')
-const { deleteImg } = require('../middleware/uploadImage')
+const { deleteImg } = require('../middleware/deleteImage')
 const {
   ALL_HEROES,
   DUPLICATE,
